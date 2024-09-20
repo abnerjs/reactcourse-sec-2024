@@ -4,7 +4,7 @@ import { createId } from '@paralleldrive/cuid2'
 export const goals = pgTable('goals', {
   id: text('id').primaryKey().$defaultFn(createId),
   title: text('title').notNull(),
-  weekFreq: integer('week_freq').notNull(),
+  weeklyFreq: integer('weekly_freq').notNull(),
   createdAt: timestamp('created_at', { withTimezone: true })
     .notNull()
     .defaultNow(),
