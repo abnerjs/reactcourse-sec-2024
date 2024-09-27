@@ -1,7 +1,7 @@
 import RadioGroup, {
   RadioGroupIndicator,
   RadioGroupItem,
-} from './ui/RadioGroup'
+} from '../ui/RadioGroup'
 
 interface WeekRadioGroupProps {
   data: {

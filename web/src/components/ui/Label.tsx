@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-function Label(props: ComponentProps<'label'>) {
+const Label = (props: ComponentProps<'label'>) => {
   return (
     <label
       {...props}

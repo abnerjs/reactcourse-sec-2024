@@ -13,23 +13,23 @@ const DialogContentStyle = styled(DialogPrimitive.DialogContent)`
   }
 `
 
-function Dialog(props: DialogPrimitive.DialogProps) {
+const Dialog = (props: DialogPrimitive.DialogProps) => {
   return <DialogPrimitive.Dialog {...props} />
 }
 
-export function DialogTrigger(props: DialogPrimitive.DialogTriggerProps) {
+export const DialogTrigger = (props: DialogPrimitive.DialogTriggerProps) => {
   return <DialogPrimitive.DialogTrigger {...props} />
 }
 
-export function DialogClose(props: DialogPrimitive.DialogCloseProps) {
+export const DialogClose = (props: DialogPrimitive.DialogCloseProps) => {
   return <DialogPrimitive.DialogClose {...props} />
 }
 
-export function DialogPortal(props: DialogPrimitive.DialogPortalProps) {
+export const DialogPortal = (props: DialogPrimitive.DialogPortalProps) => {
   return <DialogPrimitive.DialogPortal {...props} />
 }
 
-export function DialogOverlay(props: DialogPrimitive.DialogOverlayProps) {
+export const DialogOverlay = (props: DialogPrimitive.DialogOverlayProps) => {
   return (
     <DialogPrimitive.DialogOverlay
       {...props}
@@ -38,7 +38,7 @@ export function DialogOverlay(props: DialogPrimitive.DialogOverlayProps) {
   )
 }
 
-export function DialogContent(props: DialogPrimitive.DialogContentProps) {
+export const DialogContent = (props: DialogPrimitive.DialogContentProps) => {
   return (
     <DialogPortal>
       <DialogOverlay />
@@ -51,15 +51,15 @@ export function DialogContent(props: DialogPrimitive.DialogContentProps) {
   )
 }
 
-export function DialogTitle(props: DialogPrimitive.DialogTitleProps) {
+export const DialogTitle = (props: DialogPrimitive.DialogTitleProps) => {
   return (
     <DialogPrimitive.DialogTitle {...props} className='text-lg font-semibold' />
   )
 }
 
-export function DialogDescription(
+export const DialogDescription = (
   props: DialogPrimitive.DialogDescriptionProps
-) {
+) => {
   return (
     <DialogPrimitive.DialogDescription
       {...props}

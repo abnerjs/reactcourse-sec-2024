@@ -1,7 +1,7 @@
 import * as RadioGroupPrimitive from '@radix-ui/react-radio-group'
 import { Icon } from '@iconify/react'
 
-function RadioGroup(props: RadioGroupPrimitive.RadioGroupProps) {
+const RadioGroup = (props: RadioGroupPrimitive.RadioGroupProps) => {
   return (
     <RadioGroupPrimitive.RadioGroup
       {...props}
@@ -10,7 +10,9 @@ function RadioGroup(props: RadioGroupPrimitive.RadioGroupProps) {
   )
 }
 
-export function RadioGroupItem(props: RadioGroupPrimitive.RadioGroupItemProps) {
+export const RadioGroupItem = (
+  props: RadioGroupPrimitive.RadioGroupItemProps
+) => {
   return (
     <RadioGroupPrimitive.RadioGroupItem
       {...props}
@@ -19,7 +21,7 @@ export function RadioGroupItem(props: RadioGroupPrimitive.RadioGroupItemProps) {
   )
 }
 
-export function RadioGroupIndicator() {
+export const RadioGroupIndicator = () => {
   return (
     <>
       <Icon

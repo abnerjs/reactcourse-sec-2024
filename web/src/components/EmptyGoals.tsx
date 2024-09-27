@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import { DialogTrigger } from '@radix-ui/react-dialog'
 import { Button } from './ui/Button'
 import TaPago from './ui/TaPago'
-import illustration from '@assets/illustration.svg'
+import illustration from '@/assets/illustration.svg'
 
 const EmptyGoals = () => {
   return (

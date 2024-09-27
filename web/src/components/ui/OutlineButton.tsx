@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-function OutlineButton(props: ComponentProps<'button'>) {
+const OutlineButton = (props: ComponentProps<'button'>) => {
   return (
     <button
       {...props}

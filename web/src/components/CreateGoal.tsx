@@ -8,7 +8,7 @@ import {
 import { Button } from './ui/Button'
 import Input from './ui/Input'
 import Label from './ui/Label'
-import WeekRadioGroup from './WeekRadioGroup'
+import WeekRadioGroup from './create-goal/WeekRadioGroup'
 
 const radioGroupData = [
   {
