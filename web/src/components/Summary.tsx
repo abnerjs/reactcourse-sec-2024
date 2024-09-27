@@ -5,8 +5,13 @@ import TaPago from './ui/TaPago'
 import Progress, { ProgressIndicator } from './ui/ProgressBar'
 import Separator from './ui/Separator'
 import OutlineButton from './ui/OutlineButton'
+import { SummaryResponse } from '../http/getSummary'
 
-const Summary = () => {
+interface Props {
+  data?: SummaryResponse
+}
+
+const Summary = ({ data }: Props) => {
   return (
     <div className='py-10 max-w-lg px-5 mx-auto flex flex-col gap-6'>
       <div className='flex item-center justify-between'>
