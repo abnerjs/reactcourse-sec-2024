@@ -3,6 +3,8 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
+      black: '#000',
+      white: '#fff',
       zinc: {
         50: '#fafafa',
         100: '#f4f4f5',
@@ -28,6 +30,19 @@ export default {
         800: '#225e21',
         900: '#143914',
         950: '#071307',
+      },
+      yellow: {
+        50: '#FFF5E6',
+        100: '#FEE0B3',
+        200: '#FECC81',
+        300: '#FDB74E',
+        400: '#FDA31C',
+        500: '#FDA521',
+        600: '#E38902',
+        700: '#B16B02',
+        800: '#7E4C01',
+        900: '#4C2E01',
+        950: '#190F00',
       },
     },
     fontFamily: {
