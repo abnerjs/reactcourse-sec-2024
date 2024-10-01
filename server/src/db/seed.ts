@@ -17,11 +17,26 @@ async function seed() {
 
   const startOfWeek = dayjs().startOf('week')
 
+  function getRandomTime() {
+    const hour = Math.floor(Math.random() * 3) + 8
+    const minute = Math.floor(Math.random() * 60)
+    const second = Math.floor(Math.random() * 60)
+    return { hour, minute, second }
+  }
+
+  function setRandomTime(date: dayjs.Dayjs) {
+    const { hour, minute, second } = getRandomTime()
+    return date.hour(hour).minute(minute).second(second)
+  }
+
   await db.insert(goalCompletion).values([
-    { goalId: goalsResult[0].id, createdAt: startOfWeek.toDate() },
+    {
+      goalId: goalsResult[0].id,
+      createdAt: setRandomTime(startOfWeek).toDate(),
+    },
     {
       goalId: goalsResult[1].id,
-      createdAt: startOfWeek.add(1, 'day').toDate(),
+      createdAt: setRandomTime(startOfWeek.add(1, 'day')).toDate(),
     },
   ])
 }

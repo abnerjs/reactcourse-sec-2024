@@ -29,7 +29,7 @@ export async function getWeekPendingGoals() {
       .where(
         and(
           gte(goalCompletion.createdAt, firstDayOfWeek),
-          lte(goalCompletion.createdAt, firstDayOfWeek)
+          lte(goalCompletion.createdAt, lastDayOfWeek)
         )
       )
       .groupBy(goalCompletion.goalId)
