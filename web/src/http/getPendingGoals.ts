@@ -7,6 +7,6 @@ export const getPendingGoals = async (): Promise<PendingGoalsResponse> => {
 export type PendingGoalsResponse = {
   id: string
   title: string
-  weekFreq: number
+  weeklyFreq: number
   completionCount: number
 }[]
