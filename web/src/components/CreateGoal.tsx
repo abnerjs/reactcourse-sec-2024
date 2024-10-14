@@ -67,7 +67,7 @@ const CreateGoal = () => {
           </DialogDescription>
         </div>
         <form action='' className='flex-1 flex flex-col justify-between'>
-          <div className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 pb-2'>
             <div className='flex flex-col gap-2'>
               <Label htmlFor='title'>Qual a atividade?</Label>
               <Input
