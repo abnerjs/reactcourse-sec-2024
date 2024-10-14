@@ -1,14 +1,21 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import OutlineButton from '../ui/OutlineButton'
 import { getPendingGoals } from '../../http/getPendingGoals'
-import { useQuery } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import createGoalCompletion from '../../http/createGoalCompletion'
 
 const PendingGoals = () => {
   const { data } = useQuery(['pending-goals'], getPendingGoals)
+  const queryClient = useQueryClient()
 
   async function handleCompleteGoal(goalId: string) {
     await createGoalCompletion(goalId)
+    queryClient.invalidateQueries({
+      queryKey: ['summary']
+    })
+    queryClient.invalidateQueries({
+      queryKey: ['pending-goals']
+    })
   }
 
   if (!data) return null

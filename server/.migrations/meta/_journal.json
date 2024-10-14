@@ -5,29 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1726681869997,
-      "tag": "0000_illegal_zarek",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1726682363681,
-      "tag": "0001_sturdy_ogun",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1726683552149,
-      "tag": "0002_acoustic_bruce_banner",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1726686919861,
-      "tag": "0003_lame_lockheed",
+      "when": 1728921939348,
+      "tag": "0000_common_warbound",
       "breakpoints": true
     }
   ]
